@@ -13,7 +13,7 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             range = 45;
         }
 
-        public string Description()
+        public override string Description()
         {
             return "The gods blessed you with the angel staff, with it, you'll be able to summon" +
                "\n"+ "an angel that will damage enemies for you.";

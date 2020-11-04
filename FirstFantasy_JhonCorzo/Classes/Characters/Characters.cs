@@ -46,5 +46,9 @@ namespace FirstFantasy_JhonCorzo.Classes.Characters
             return info;
         }
 
+        public virtual string Description()
+        {
+            return "";
+        }
     }
 }

@@ -37,5 +37,9 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             }
         }
 
+        public virtual string Description()
+        {
+            return "";
+        }
     }
 }

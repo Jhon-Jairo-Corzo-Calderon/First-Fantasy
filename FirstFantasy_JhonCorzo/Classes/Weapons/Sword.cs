@@ -12,7 +12,7 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             atackSpeed = 1.0;
             range = 40;
         }
-        public string Description()
+        public override string Description()
         {
             return "The typical sword.";
         }

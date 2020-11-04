@@ -12,7 +12,7 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             atackSpeed = 0.6;
             range = 40;
         }
-        public string Description()
+        public override string Description()
         {
             return "More damage than a sword, but with lower atack speed";
         }

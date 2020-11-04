@@ -12,7 +12,7 @@ namespace FirstFantasy_JhonCorzo.Classes.Characters
             damage = 10;
         }
 
-        public  string Description()
+        public override string Description()
         {
             string warrior = "With this class you will be able to tank and deal damage, but focusing on the tank role.";
 

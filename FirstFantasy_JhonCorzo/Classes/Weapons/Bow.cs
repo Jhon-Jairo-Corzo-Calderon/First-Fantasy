@@ -13,7 +13,7 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             range = 150;
         }
 
-        public string Description()
+        public override string Description()
         {
             return "High damage, but lower atack speed than the Crossbow.";
         }

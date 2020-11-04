@@ -12,7 +12,7 @@ namespace FirstFantasy_JhonCorzo.Classes.Characters
             damage = 10;
         }
 
-        public  string Description()
+        public override string Description()
         {
             string cleric = "With this class you will be able to help your teammates, thanks to the blessing of the gods" +
                 ", you'll be able to heal yourself or any ally.";

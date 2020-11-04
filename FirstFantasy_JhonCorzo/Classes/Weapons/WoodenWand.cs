@@ -12,7 +12,7 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             atackSpeed = 0.5;
             range = 170;
         }
-        public string Description()
+        public override string Description()
         {
             return "Throug this wand, you'll be able to do any basic spell, but with a very low atack speed.";
         }
