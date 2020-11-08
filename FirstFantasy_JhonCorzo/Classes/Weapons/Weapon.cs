@@ -6,9 +6,13 @@ namespace FirstFantasy_JhonCorzo.Classes
 {
     public class Weapon : Items
     {
-        public int damage = 0;
-        public double atackSpeed = 0;
-        public int range = 0; //Distance in pixels
+        private int damage = 0;
+        private double atackSpeed = 0;
+        private int range = 0; //Distance in pixels
+
+        public int Damage { get => damage; set => damage = value; }
+        public double AtackSpeed { get => atackSpeed; set => atackSpeed = value; }
+        public int Range { get => range; set => range = value; }
 
         public int CritChance()
         {
@@ -18,28 +22,6 @@ namespace FirstFantasy_JhonCorzo.Classes
 
             return critChance;
         }
-
-        public int Damage()
-        { return damage; }
-
-        public List<string> BaseStats()
-        {
-            List<string> stats = new List<string>();
-
-            if (damage != 0)
-            {
-                stats.Add(damage.ToString());
-                stats.Add(range.ToString());
-                stats.Add(atackSpeed.ToString());
-
-                return stats;
-            }
-            else
-            {
-                throw new System.Exception("The class is not initialized.");
-            }
-        }
-
 
     }
 }

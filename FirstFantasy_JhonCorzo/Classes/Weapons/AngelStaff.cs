@@ -11,9 +11,9 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             Name = "Angel Staff";
             Amount = 1;
             Description = "The gods blessed you with the angel staff, with it, you'll be able to summon an angel that will damage enemies for you.";
-            damage = 45;
-            atackSpeed = 1.2;
-            range = 45;
+            Damage = 45;
+            AtackSpeed = 1.2;
+            Range = 45;
         }
 
         public static string WDescription()

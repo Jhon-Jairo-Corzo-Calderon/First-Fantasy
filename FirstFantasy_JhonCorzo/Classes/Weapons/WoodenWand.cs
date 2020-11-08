@@ -11,9 +11,9 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             Name = "Wooden Wand";
             Amount = 1;
             Description = "Throug this wand, you'll be able to do any basic spell, but with a very low atack speed.";
-            damage = 135;
-            atackSpeed = 0.5;
-            range = 170;
+            Damage = 135;
+            AtackSpeed = 0.5;
+            Range = 170;
         }
         public static string WDescription()
         {

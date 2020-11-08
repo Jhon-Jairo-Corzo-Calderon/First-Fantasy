@@ -11,9 +11,9 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             Name = "Sword";
             Amount = 1;
             Description = "The typical sword.";
-            damage = 30;
-            atackSpeed = 1.0;
-            range = 40;
+            Damage = 30;
+            AtackSpeed = 1.0;
+            Range = 40;
         }
         public static string WDescription()
         {

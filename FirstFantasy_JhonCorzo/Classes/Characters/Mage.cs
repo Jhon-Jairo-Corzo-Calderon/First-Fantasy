@@ -23,11 +23,5 @@ namespace FirstFantasy_JhonCorzo.Classes.Characters
             return mage;
         }
 
-        public  string CharPhrase()
-        {
-            string phrase1 = "Study, study and practice, those are the only 3 things you need to become a powerful mage";
-            return phrase1;
-        }
-
     }
 }

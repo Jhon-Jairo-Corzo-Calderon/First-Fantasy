@@ -22,11 +22,6 @@ namespace FirstFantasy_JhonCorzo.Classes.Characters
             return cleric;
         }
 
-        public  string CharPhrase()
-        {
-            string phrase1 = "The gods will decide my destiny.";
-            return phrase1;
-        }
 
     }
 }

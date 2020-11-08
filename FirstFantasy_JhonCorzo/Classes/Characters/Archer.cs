@@ -22,10 +22,5 @@ namespace FirstFantasy_JhonCorzo.Classes.Characters
             return archer;
         }
 
-        public static  string CharPhrase()
-        {
-            string phrase1 = "One arrow, one kill.";
-            return phrase1;
-        }
     }
 }

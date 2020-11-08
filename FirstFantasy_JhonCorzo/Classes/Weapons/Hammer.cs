@@ -11,9 +11,9 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             Name = "Hammer";
             Amount = 1;
             Description = "More damage than a sword, but with lower atack speed";
-            damage = 50;
-            atackSpeed = 0.6;
-            range = 40;
+            Damage = 50;
+            AtackSpeed = 0.6;
+            Range = 40;
         }
         public static string WDescription()
         {

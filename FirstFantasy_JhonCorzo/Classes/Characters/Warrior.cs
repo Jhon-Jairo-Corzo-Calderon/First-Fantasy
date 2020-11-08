@@ -21,10 +21,5 @@ namespace FirstFantasy_JhonCorzo.Classes.Characters
             return warrior;
         }
 
-        public  string CharPhrase()
-        {
-            string phrase1 = "Belive in your own strenght.";
-            return phrase1;
-        }
     }
 }

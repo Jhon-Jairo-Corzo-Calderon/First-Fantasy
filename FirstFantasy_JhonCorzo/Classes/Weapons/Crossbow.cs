@@ -11,9 +11,9 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             Name = "Crossbow";
             Amount = 1;
             Description = "This weapon has high atack speed, but lower damage than a bow.";
-            damage = 80;
-            atackSpeed = 2.5;
-            range = 150; 
+            Damage = 80;
+            AtackSpeed = 2.5;
+            Range = 150; 
         }
 
         public static string WDescription()
