@@ -6,13 +6,16 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
 {
     public class Hammer : Weapon
     {
-        Hammer()
+        public Hammer()
         {
+            Name = "Hammer";
+            Amount = 1;
+            Description = "More damage than a sword, but with lower atack speed";
             damage = 50;
             atackSpeed = 0.6;
             range = 40;
         }
-        public override string Description()
+        public static string WDescription()
         {
             return "More damage than a sword, but with lower atack speed";
         }

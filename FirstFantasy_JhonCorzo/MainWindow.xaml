@@ -4,9 +4,197 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FirstFantasy_JhonCorzo"
-        mc:Ignorable="d"
+        mc:Ignorable=""
         Title="MainWindow" Height="720" Width="1280">
     <Grid>
+
+        <Grid Name="gridInitial"  Background="#FF2B2C28" Visibility="Visible" Height="704" VerticalAlignment="Top">
+            <Label Content="First Fantasy" HorizontalAlignment="Center" Margin="0,57,0,0" VerticalAlignment="Top" FontSize="40" FontFamily="Century Schoolbook" Background="{x:Null}" FontWeight="Normal" FontStyle="Italic">
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6888F4" Offset="0.263"/>
+                        <GradientStop Color="#FF2B2B2B" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+            </Label>
+            <Border BorderThickness="2" BorderBrush="White" HorizontalAlignment="Center" Height="343" Margin="0,214,0,0" VerticalAlignment="Top" Width="1048" Visibility="Visible"/>
+            <Label Content="Alpha 1.0" HorizontalAlignment="Left" Margin="0,649,0,0" Foreground="White" FontSize="14" Height="31" VerticalAlignment="Top"/>
+            <Label Content="Create your dreamed character" HorizontalAlignment="Center" Margin="0,284,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold"/>
+            <Button Name="btnCreate" Content="Create Character" HorizontalAlignment="Center" Margin="0,411,0,0" VerticalAlignment="Top" Width="128" Height="33" Click="btnCreate_Click" FontSize="14" Background="#FFACC2FD" BorderBrush="{x:Null}"/>
+
+
+        </Grid>
+
+        
+        <Grid Name="gridCharacterP"  Background="#FF2B2C28" Visibility="Hidden" HorizontalAlignment="Right" Width="1280">
+            <Label Name="labelCharClass" Content="ClassChar" Margin="-655,620,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="#FFA6A5A5" FontFamily="Palatino Linotype" FontSize="24" FontWeight="Normal" HorizontalAlignment="Center"/>
+            <Label Name="labelCharName" Content="NameChar" HorizontalAlignment="Center" Margin="-650,553,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="Palatino Linotype" FontSize="36" FontWeight="Normal"/>
+            <Image Name="imageChar" Height="439" Margin="0,86,730,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="390"/>
+            <Button Name="btnCharInfo" Content="Character Info" HorizontalAlignment="Right" Height="39" Margin="0,0,260,504" VerticalAlignment="Bottom" Width="158" Background="#FFF1ECA0" BorderBrush="#FFF1ECA0" FontSize="14" Click="btnCharInfo_Click"/>
+            <Button Name="btnInventory" Content="Inventory" HorizontalAlignment="Right" Height="39" Margin="0,0,260,416" VerticalAlignment="Bottom" Width="158" Background="#FFF1ECA0" BorderBrush="#FFF1ECA0" FontSize="14" Click="btnInventory_Click"/>
+            <Button Name="btnAttack" Visibility="Visible" Content="Test your weapon" HorizontalAlignment="Right" Height="39" Margin="0,0,260,0" VerticalAlignment="Center" Width="158" Background="#FFF1ECA0" BorderBrush="#FFF1ECA0" FontSize="14" Click="btnAtack_Click"/>
+            <Button Name="btnOtherChars" Visibility="Hidden" Content="Select Other Character" HorizontalAlignment="Right" Margin="0,0,260,246" Width="158" Background="#FFF1ECA0" BorderBrush="#FFF1ECA0" FontSize="14" Click="btnOtherChars_Click" Height="39" VerticalAlignment="Bottom"/>
+            <Button Name="btnCreateNewChar" Content="Create Other Character" HorizontalAlignment="Right" Margin="0,0,266,105" Width="146" Background="#FF082290" BorderBrush="#FF082290" FontSize="13" Foreground="White" Click="btnCreateNewChar_Click" Height="34" VerticalAlignment="Bottom" />
+            <Button Name="btnDeleteChar" Content="Delete Character" HorizontalAlignment="Right" Height="34" Margin="0,0,266,42" VerticalAlignment="Bottom" Width="146" Background="#FF7C0101" BorderBrush="#FF7C0101" FontSize="13" Foreground="White" Click="btnDeleteChar_Click"/>
+
+            <Grid Name="gridCharacterIn" Background="Black" Visibility="Hidden" Margin="0,86,117,0" Height="448" VerticalAlignment="Top" HorizontalAlignment="Right" Width="444" >
+                <TextBox Name="textBxCharInfo" Text="aaa" SelectionBrush="{x:Null}" BorderBrush="{x:Null}" SelectionTextBrush="{x:Null}" Background="Black" Foreground="Gray" FontSize="20" Margin="24,105,24,19" />
+                <Button Name="btnCloseCharInfo" Content="Close Character Info" HorizontalAlignment="Center" Height="30" VerticalAlignment="Top" Width="128" Background="#FFF1ECA0" BorderBrush="#FFF1ECA0" FontSize="13" Foreground="Black" Margin="0,368,0,0" Click="btnCloseCharInfo_Click"/>
+                <Label Content="Character Information" HorizontalAlignment="Center" Margin="0,31,0,0" VerticalAlignment="Top" Foreground="White" FontSize="22" FontWeight="Bold" FontFamily="Candara"/>
+            </Grid>
+
+        </Grid>
+
+        <Grid Name="gridCharacter"  Background="#FF2B2C28" Grid.RowSpan="2" Visibility="Hidden">
+            <Label Content="  First &#xA;Fantasy" HorizontalAlignment="Left" Margin="774,235,0,0" VerticalAlignment="Top" FontSize="72" FontFamily="Century Schoolbook" Background="{x:Null}" FontWeight="Normal" FontStyle="Italic" >
+                <Label.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF6888F4" Offset="0.263"/>
+                        <GradientStop Color="#FF2B2B2B" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.Foreground>
+            </Label>
+            <Label Content="Alpha 1.0" HorizontalAlignment="Left" Margin="10,0,0,10" Foreground="White" FontSize="14" Height="31" VerticalAlignment="Bottom"/>
+
+            <Grid Name="gridChar_1"  Margin="112,75,0,0" Background="Black" RenderTransformOrigin="0.5,0.5" Height="539" VerticalAlignment="Top" HorizontalAlignment="Left" Width="390">
+                <Label Content="Basic Character Information" FontSize="18" Foreground="White" FontWeight="Bold" Margin="17,8,50,502" Visibility="Visible"/>
+                <Label Content="Age:" FontSize="14" Foreground="White" Margin="44,350,0,159" Visibility="Visible" HorizontalAlignment="Left" Width="125"/>
+                <Label Content="Name:" FontSize="14" Foreground="White" Margin="44,113,0,0" Visibility="Visible" HorizontalAlignment="Left" Width="117" Height="30" VerticalAlignment="Top"/>
+                <Label Content="Gender:" FontSize="14" Foreground="White" Margin="44,239,0,269" Visibility="Visible" HorizontalAlignment="Left" Width="117"/>
+
+                <TextBox Name="textAge" HorizontalAlignment="Center" Margin="0,385,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Height="24" FontSize="14"/>
+                <TextBox Name="textName" HorizontalAlignment="Center" Margin="0,148,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" Height="24" FontSize="14"/>
+
+                <ComboBox Name="comboBoxGender" HorizontalAlignment="Center" Margin="0,270,0,0" VerticalAlignment="Top" Width="290" >
+                    <ComboBoxItem Content="Male"/>
+                    <ComboBoxItem Content="Female"/>
+                </ComboBox>
+                <Button Name="btnSave1" Content="Save Info" HorizontalAlignment="Center" Margin="0,488,0,0" VerticalAlignment="Top" Width="84" BorderBrush="#FF12027F" Foreground="White" Background="#FF12027F" FontSize="13" Click="btnSave1_Click" />
+
+
+            </Grid>
+
+            <Grid Name="gridChar_2"  Margin="112,75,0,0" Background="Black" RenderTransformOrigin="0.5,0.5" Height="539" VerticalAlignment="Top" HorizontalAlignment="Left" Width="390" Visibility="Hidden">
+                <Label Content="Character Personalization" FontSize="18" Foreground="White" FontWeight="Bold" Margin="17,8,129,502" Visibility="Visible"/>
+                <Label Content="Character Class:" FontSize="14" Foreground="White" Margin="44,113,0,0" Visibility="Visible" HorizontalAlignment="Left" Width="117" Height="30" VerticalAlignment="Top"/>
+                <Label Name="labelWeapon" Content="Main weapon:" FontSize="14" Foreground="White" Margin="44,238,0,269" HorizontalAlignment="Left" Width="117" Visibility="Hidden"/>
+
+                <ComboBox Name="comboBoxClass" HorizontalAlignment="Center" Margin="0,148,0,0" VerticalAlignment="Top" Width="290" DropDownClosed="comboBoxClass_DropDownClosed"   >
+                    <ComboBoxItem Content="Archer"/>
+                    <ComboBoxItem Content="Cleric"/>
+                    <ComboBoxItem Content="Mage"/>
+                    <ComboBoxItem Content="Warrior"/>
+                </ComboBox>
+
+                <ComboBox Name="comboBoxArcherW" HorizontalAlignment="Center" Margin="0,281,0,0" VerticalAlignment="Top" Width="290" Visibility="Hidden" DropDownClosed="comboBoxArcherW_DropDownClosed" >
+                    <ComboBoxItem Content="Crossbow"/>
+                    <ComboBoxItem Content="Bow"/>
+                </ComboBox>
+
+                <ComboBox Name="comboBoxWarriorW" HorizontalAlignment="Center" Margin="0,281,0,0" VerticalAlignment="Top" Width="290"  Visibility="Hidden" DropDownClosed="comboBoxWarriorW_DropDownClosed" >
+                    <ComboBoxItem Content="Hammer"/>
+                    <ComboBoxItem Content="Sword"/>
+                </ComboBox>
+
+                <Button Name="btnSave2" Content="Create Character" HorizontalAlignment="Center" Margin="0,488,0,0" VerticalAlignment="Top" Width="132" BorderBrush="#FF12027F" Foreground="White" Background="#FF12027F" FontSize="13" Click="btnSave2_Click"  />
+                <Label Name="labelAngelStaff" Content="Angel Staff" HorizontalAlignment="Center" Margin="0,284,0,0" VerticalAlignment="Top" Foreground="#FF0083FF" FontSize="18" Width="290" FontFamily="Papyrus" FontWeight="Bold" FontStyle="Normal" Visibility="Hidden"/>
+                <Label Name="labelWoodenWand" Content="Wooden Wand" HorizontalAlignment="Center" Margin="0,284,0,0" VerticalAlignment="Top" Foreground="#FF0083FF" FontSize="18" Width="290" FontFamily="Papyrus" FontWeight="Bold" FontStyle="Normal" Visibility="Hidden"/>
+            </Grid>
+
+            <Grid Name="gridChar_3"  Margin="774,75,0,0" Background="Black" RenderTransformOrigin="0.5,0.5" Height="539" VerticalAlignment="Top" HorizontalAlignment="Left" Width="390" Visibility="Hidden">
+
+                <Label Content="Character Description" FontSize="18" Foreground="White" FontWeight="Bold" Margin="17,8,129,495" Visibility="Visible"/>
+                <Label Name="labelWeaponD" Content="Weapon Description" FontSize="18" Foreground="White" FontWeight="Bold" Margin="17,270,129,234" Visibility="Hidden"/>
+                <TextBlock Name="textBlockCharD" HorizontalAlignment="Center" Margin="0,67,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="188" Width="326" Foreground="Gray" FontSize="16"/>
+                <TextBlock Name="textBlockWeaponD" HorizontalAlignment="Center" Margin="0,329,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="188" Width="326" Foreground="Gray" FontSize="16" Visibility="Hidden"/>
+            </Grid>
+        </Grid>
+
+
+        <Grid Name="gridInventory"  Background="#FF2B2C28" Grid.RowSpan="2" Visibility="Hidden">
+
+
+            <DataGrid Margin="120,184,620,147" Name="dataGridInventory" AutoGenerateColumns="False" Width="540" CanUserResizeColumns="False" CanUserAddRows="False" CanUserResizeRows="False"  CanUserReorderColumns="False" Background="LightGray" RowBackground="LightBlue" AlternatingRowBackground="LightSeaGreen" FontSize="15">
+
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Width="147" FontSize="12" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Amount" Width="147" FontSize="12" Binding="{Binding Amount}" />
+                    <DataGridTextColumn Header="Description" Width="147" FontSize="12" Binding="{Binding Description}" />
+
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button FontSize="14" Name ="btnDelete" Click="btnDelete_Click" Content="Delete" Width="70"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Button Name="btnAddItem" Content="Add Item" HorizontalAlignment="Left" Margin="899,596,0,0" VerticalAlignment="Top" Width="106"  Click="btnAddItem_Click"/>
+
+            <Label Content="Add Items" HorizontalAlignment="Left" Margin="815,184,0,0" VerticalAlignment="Top" Foreground="#FFB7B3B3" FontFamily="Candara" FontSize="24" FontStyle="Italic" FontWeight="Bold"/>
+            <Label Content="Item:" HorizontalAlignment="Left" Margin="815,267,0,0" VerticalAlignment="Top" Foreground="#FFB7B3B3" FontFamily="Candara" FontSize="20" FontStyle="Normal" FontWeight="Normal"/>
+            <Label Content="Amount:" HorizontalAlignment="Left" Margin="815,430,0,0" VerticalAlignment="Top" Foreground="#FFB7B3B3" FontFamily="Candara" FontSize="20" FontStyle="Normal" FontWeight="Normal"/>
+
+            <ComboBox Name="comboBxItem" HorizontalAlignment="Left" Margin="815,320,0,0" VerticalAlignment="Top" Width="273">
+                <ComboBoxItem Content="Damage Potion"/>
+                <ComboBoxItem Content="Iron Arrow"/>
+                <ComboBoxItem Content="Magic Ring"/>
+                <ComboBoxItem Content="Potion"/>
+                <ComboBoxItem Content="Shield"/>
+                <ComboBoxItem Content="Wooden Arrow"/>
+            </ComboBox>
+
+
+
+            <TextBox Name="labelAmount" Text="{Binding ElementName=slAmount, Path=Value, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Right" Margin="1053,0,0,203" HorizontalAlignment="Left" Width="40" Height="24" VerticalAlignment="Bottom" />
+            <Slider Value="0" Maximum="100" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" Name="slAmount" Margin="815,0,0,203" Height="24" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="233" />
+            <Label Content="Inventory" HorizontalAlignment="Left" Margin="120,78,0,0" VerticalAlignment="Top" Foreground="#FF1142B6" FontFamily="Candara" FontSize="36" FontStyle="Italic" FontWeight="Bold" Background="{x:Null}"/>
+            <Button Name="btnInventoryBack" Content="Character Menu" HorizontalAlignment="Left" Height="39" Margin="311,622,0,0" VerticalAlignment="Top" Width="158" Background="#FFF1ECA0" BorderBrush="#FFF1ECA0" FontSize="14" Click="btnInventoryBack_Click"/>
+
+        </Grid>
+
+        <Grid Name="gridOtherChar"  Background="#FF2B2C28" Grid.RowSpan="2" Visibility="Hidden">
+
+
+            <DataGrid Margin="56,166,56,165" Name="dataGridOtherChar" AutoGenerateColumns="False" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserAddRows="False" CanUserResizeRows="False"  Background="LightGray" RowBackground="LightBlue" AlternatingRowBackground="LightSeaGreen" FontSize="15">
+
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Name" Width="147" FontSize="12" Binding="{Binding Name}"/>
+                    <DataGridTextColumn Header="Gender" Width="147" FontSize="12" Binding="{Binding Genre}" />
+                    <DataGridTextColumn Header="Age" Width="147" FontSize="12" Binding="{Binding Age}" />
+                    <DataGridTextColumn Header="Level" Width="147" FontSize="12" Binding="{Binding Level}" />
+                    <DataGridTextColumn Header="Class" Width="147" FontSize="12" Binding="{Binding CharClass}" />
+
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button FontSize="14" Name ="btnSelectChar" Click="btnSelectChar_Click" Content="Select" Width="70"/>
+
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button FontSize="14" Name ="btnDeleteChar" Click="btnDeleteChar_Click_1" Content="Delete" Width="70" Background="Red"/>
+
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Label Content="Characters Created" HorizontalAlignment="Left" Margin="56,70,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Candara" FontSize="36" FontStyle="Italic" FontWeight="Bold"/>
+            <Button Name="btnOtherCharBack" Content="Character Menu" HorizontalAlignment="Center" Height="39" Margin="0,608,0,0" VerticalAlignment="Top" Width="158" Background="#FFF1ECA0" BorderBrush="#FFF1ECA0" FontSize="14" Click="btnInventoryBack_Click" />
+
+        </Grid>
 
     </Grid>
 </Window>

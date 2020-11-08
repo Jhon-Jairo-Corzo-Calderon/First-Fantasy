@@ -6,14 +6,11 @@ namespace FirstFantasy_JhonCorzo.Classes.Inventory_and_Items
 {
     public class Shield : Items
     {
-        public Shield()
+        public Shield(int amount)
         {
-            amount = 1;
-            name = "Shield";
-        }
-        public override string Description()
-        {
-            return "Increase Defense.";
+            Amount = amount;
+            Name = "Shield";
+            Description = "Increase Defense.";
         }
 
     }

@@ -2,24 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FirstFantasy_JhonCorzo.Classes.Inventory_and_Items
+namespace FirstFantasy_JhonCorzo.Classes
 {
     public class Items
     {
-        public int amount;
-        public string name;
+        private int amount;
+        private string name;
+        private string description;
 
-        public virtual string Description()
-        {
-            return "";
-        }
+        public int Amount { get => amount; set => amount = value; }
+        public string Name { get => name; set => name = value; }
+        public string Description { get => description; set => description = value; }
 
-        public string ItemInfo()
-        {
-            string sAmount = amount.ToString();
-            string itemInfo = name + " " + sAmount;
-
-            return itemInfo;
-        }
     }
 }

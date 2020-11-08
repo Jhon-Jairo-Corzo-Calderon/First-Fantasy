@@ -8,13 +8,9 @@ namespace FirstFantasy_JhonCorzo.Classes.Inventory_and_Items
     {
         public IronArrow(int amount)
         {
-            this.amount = amount;
-            name = "IronArrow";
-        }
-
-        public override string Description()
-        {
-            return "Ammo for bow or crossbow, increased damage than a wooden arrow.";
+            Amount = amount;
+            Name = "IronArrow";
+            Description = "Ammo for bow or crossbow, increased damage than a wooden arrow.";
         }
     }
 }

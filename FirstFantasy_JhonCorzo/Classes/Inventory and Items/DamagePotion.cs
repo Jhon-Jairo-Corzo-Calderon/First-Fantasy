@@ -8,13 +8,10 @@ namespace FirstFantasy_JhonCorzo.Classes.Inventory_and_Items
     {
         public DamagePotion(int amount)
         {
-            this.amount = amount;
-            name = "DamagePotion";
+            Amount = amount;
+            Name = "DamagePotion";
+            Description = "When used, increase damage for 5 minutes.";
         }
 
-        public override string Description()
-        {
-            return "When used, increase damage for 5 minutes.";
-        }
     }
 }

@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FirstFantasy_JhonCorzo.Classes.Weapons
+namespace FirstFantasy_JhonCorzo.Classes
 {
-    public abstract class Weapon
+    public class Weapon : Items
     {
         public int damage = 0;
         public double atackSpeed = 0;
         public int range = 0; //Distance in pixels
 
-        public static int CritChance()
+        public int CritChance()
         {
             Random rnm = new Random();
 
@@ -18,6 +18,9 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
 
             return critChance;
         }
+
+        public int Damage()
+        { return damage; }
 
         public List<string> BaseStats()
         {
@@ -37,9 +40,6 @@ namespace FirstFantasy_JhonCorzo.Classes.Weapons
             }
         }
 
-        public virtual string Description()
-        {
-            return "";
-        }
+
     }
 }

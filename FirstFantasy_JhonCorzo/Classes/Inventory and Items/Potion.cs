@@ -8,13 +8,9 @@ namespace FirstFantasy_JhonCorzo.Classes.Inventory_and_Items
     {
         public Potion(int amount)
         {
-            this.amount = amount;
-            name = "Potion";
-        }
-
-        public override string Description()
-        {
-            return "When used, heal 20% of missing life.";
+            Amount = amount;
+            Name = "Potion";
+            Description = "When used, heal 20% of missing life.";
         }
     }
 }

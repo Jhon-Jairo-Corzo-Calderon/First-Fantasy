@@ -6,15 +6,12 @@ namespace FirstFantasy_JhonCorzo.Classes.Inventory_and_Items
 {
     public class MagicRing : Items
     {
-        public MagicRing()
+        public MagicRing( int amount)
         {
-            amount = 1;
-            name = "MagicRing";
+            Amount = amount;
+            Name = "MagicRing";
+            Description = "Increase Magic Damage.";
         }
-
-        public override string Description()
-        {
-            return "Increase Magic Damage.";
-        }
+        
     }
 }

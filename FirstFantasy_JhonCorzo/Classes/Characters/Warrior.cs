@@ -6,13 +6,15 @@ namespace FirstFantasy_JhonCorzo.Classes.Characters
 {
     public class Warrior : Characters
     {
-        Warrior()
+        public Warrior()
         {
-            health = 1000;
-            damage = 10;
+            Health = 1000;
+            Damage = 10;
+            Level = 1;
+            CharClass = "Warrior";
         }
 
-        public override string Description()
+        public static string Description()
         {
             string warrior = "With this class you will be able to tank and deal damage, but focusing on the tank role.";
 
